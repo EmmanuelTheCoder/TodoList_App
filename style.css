@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    box-sizing: border-box;
+
+}
+/* this is the style for the "TodoList" header */
+h1{
+    margin-bottom: 3rem;
+    text-align: center;
+    margin-top: .4rem;
+    color: rgb(59, 59, 165);
+}
+input, .add{
+    display: block;
+    margin-bottom: 20px;
+    height: 2rem;
+    width: 14rem;
+    border-radius: 50px;
+}
+.container{
+    border: 2px solid rgba(44, 58, 22, 0.2);
+    height: 30rem;
+    width: 22rem;
+    border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow: silver 10px 10px 10px 10px;
+}
+
+input{
+    text-align: center;
+    width: 18rem;
+    outline: none;
+    margin-left: 1.8rem;
+    transition: all 1s ease;
+    
+}
+.add{
+    margin-left: 3.8rem;
+    outline: none;
+    border-color: rgba(99, 153, 45, 0.8);
+    background: rgb(96, 96, 231);
+    color: #fff;
+    transition: all 1s ease-in-out;
+}
+.delete{
+    margin-left: .9rem;
+    width: 5rem;
+    height: 2rem;
+    font-size: .9em;
+    background: rgb(236, 65, 65);
+    border: 1px solid red;
+    outline: none;
+    color: #fff;
+    border-radius: 40px;
+    cursor: pointer;
+    
+}
+.add:hover{
+    transition: all 1s ease-in-out;
+    transform: scale(1.2);
+}
+
+/* styling the ul tag created with JavaScript*/
+
+.addList{
+    box-sizing: border-box;
+    word-break: break-all;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-left: 3rem;
+    border-color: rgba(44, 58, 22, 0.2);
+    word-wrap: break-word;
+    border-radius: 50px;
+    padding: 3px 3px 3px 3px;
+    cursor: pointer;
+    font-size: 1.1em;
+    
+}
+/* styling the li tag created with JavaScript */
+li{
+    padding: 0px 10px;
+    box-shadow: silver 1px 2px 3px 1px;
+    margin-left: -2rem;
+    width: 13rem;
+    margin-bottom: .9rem;
+    
+    
+}
+.addList:first-child{
+    margin-top: 3rem;
+}
+/* styling the div tag where the task added will appear */
+.display{
+   box-shadow: rgb(245, 241, 241) 10px 10px 8px 5px;
+    margin-top: -1rem;
+   width: 18rem;
+   height: 33vh;
+   margin-left: auto;
+   margin-right: auto;
+   box-sizing: border-box;
+   overflow-y: scroll;
+
+}
+
+.input:focus{
+    text-align: left;
+    padding-left: 8px;
+}
+
+/* styling the warning message that appears if task to do is empthy */
+.warning{
+    text-align: center;
+    margin-top: -0.5rem;
+    text-transform: lowercase;
+    color: rgb(219, 88, 88);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* styling the created checkbox */
+.achievedCheckbox{
+    width: 15px;
+    transform: translate(13.8rem, -1.3rem)
+}
+
+.questionMark{
+    margin-right: .9rem;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: white;
+    border-radius: 50px;
+    background: blue;
+    width: 1.5rem;
+    margin-left: auto;
+    padding-left: .5rem;
+    cursor: pointer;
+}
+
+footer{
+    color: blue;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
