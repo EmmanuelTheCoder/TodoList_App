@@ -47,19 +47,21 @@ const createLi = (text) =>{
  
     });
 
-
-storedData.forEach(storedValue =>{
-    createLi(storedValue);
-});
-
-useDelete.addEventListener('click', function(){
+    useDelete.addEventListener('click', function(){
         localStorage.removeItem('data');
         while(addList.firstChild){
             addList.removeChild(addList.firstChild);
         }
         setArray = [];
         
+    });
+
+
+storedData.forEach(storedValue =>{
+    createLi(storedValue);
 });
+
+
 
 
 
